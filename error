@@ -1,0 +1,18 @@
+Exception while ticking lord with job RimWorld.LordJob_Siege: 
+System.NullReferenceException: Object reference not set to an instance of an object
+  at RimWorld.TurretGunUtility+<>c__DisplayClass2_0.<TryFindRandomShellDef>b__0 (Verse.ThingDef x) [0x00019] in <95de19971c5d40878d8742747904cdcd>:0 
+  at System.Linq.Enumerable+WhereListIterator`1[TSource].ToList () [0x00017] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
+  at System.Linq.Enumerable.ToList[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x0001f] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
+  at Verse.GenCollection.TryRandomElement[T] (System.Collections.Generic.IEnumerable`1[T] source, T& result) [0x00029] in <95de19971c5d40878d8742747904cdcd>:0 
+  at RimWorld.TurretGunUtility.TryFindRandomShellDef (Verse.ThingDef turret, System.Boolean allowEMP, System.Boolean allowToxGas, System.Boolean mustHarmHealth, RimWorld.TechLevel techLevel, System.Boolean allowAntigrainWarhead, System.Single maxMarketValue, RimWorld.Faction faction) [0x000b0] in <95de19971c5d40878d8742747904cdcd>:0 
+  at RimWorld.LordToil_Siege.LordToilTick () [0x0029f] in <95de19971c5d40878d8742747904cdcd>:0 
+  at Verse.AI.Group.Lord.LordTick () [0x000aa] in <95de19971c5d40878d8742747904cdcd>:0 
+  at (wrapper dynamic-method) Verse.AI.Group.LordManager.Verse.AI.Group.LordManager.LordManagerTick_Patch0(Verse.AI.Group.LordManager)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) Verse.Log:Verse.Log.Error_Patch7 (string)
+(wrapper dynamic-method) Verse.AI.Group.LordManager:Verse.AI.Group.LordManager.LordManagerTick_Patch0 (Verse.AI.Group.LordManager)
+(wrapper dynamic-method) Verse.Map:Verse.Map.MapPostTick_Patch1 (Verse.Map)
+(wrapper dynamic-method) Verse.TickManager:Verse.TickManager.DoSingleTick_Patch7 (Verse.TickManager)
+Verse.TickManager:TickManagerUpdate ()
+(wrapper dynamic-method) Verse.Game:Verse.Game.UpdatePlay_Patch2 (Verse.Game)
+(wrapper dynamic-method) Verse.Root_Play:Verse.Root_Play.Update_Patch1 (Verse.Root_Play)
